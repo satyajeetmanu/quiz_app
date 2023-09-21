@@ -3,13 +3,22 @@
 
 > initState(): executes once after the object of the state has been created
 
-Every Flutter Widget has a built-in lifecycle: A collection of methods that are automatically executed 
+> Every Flutter Widget has a built-in lifecycle: A collection of methods that are automatically executed 
     by Flutter (at certain points of time).
 
-There are three extremely important (stateful) widget lifecycle methods you should be aware of:
+> There are three extremely important (stateful) widget lifecycle methods you should be aware of:
 
-initState(): Executed by Flutter when the StatefulWidget's State object is initialized
+    1. initState(): Executed by Flutter when the StatefulWidget's State object is initialized
 
-build(): Executed by Flutter when the Widget is built for the first time AND after setState() was called
+    2. build(): Executed by Flutter when the Widget is built for the first time AND after setState() was called
 
-dispose(): Executed by Flutter right before the Widget will be deleted (e.g., because it was displayed conditionally)
+    3. dispose(): Executed by Flutter right before the Widget will be deleted (e.g., because it was displayed
+         conditionally)
+
+> .map((item){}) -> used to convert a list of certain type into a list of any different type. The anonymous 
+    function will be called for each 'item' in the list.
+> ...   -> this operator is used to 'spread' the list. Pulls the items out of the list and places them as comma 
+    sparated values.
+
+
+
