@@ -45,18 +45,24 @@ class ResultScreen extends StatelessWidget {
               'You answered $numCorrectAnwers out of $numTotalQuestions questions correctly!',
               style: GoogleFonts.lato(
                 color: Colors.white,
-                fontSize: 24,
+                fontSize: 32,
               ),
             ),
             const SizedBox(height: 50),
             QuestionsSummary(getSummaryData()),
             const SizedBox(height: 30),
             OutlinedButton.icon(
-              icon: const Icon(Icons.refresh),
+              icon: const Icon(
+                Icons.refresh,
+                color: Colors.white,
+              ),
               onPressed: onRestart,
+              style: OutlinedButton.styleFrom(
+                backgroundColor: const Color.fromARGB(255, 25, 1, 112),
+              ),
               label: Text(
                 'Restart Quiz',
-                style: GoogleFonts.lato(color: Colors.white, fontSize: 16),
+                style: GoogleFonts.lato(color: Colors.white, fontSize: 18),
               ),
             ),
           ],

@@ -21,4 +21,9 @@
     sparated values.
 
 
+> We can also pass functions from one widget to another, in order to invoke the fucntion of a different widget.
+
+> We can render content conditionally, by setting different UI states for different conditions. We can use 
+    a widget as a state value and change it to different widgets based on the conditions.
+
 

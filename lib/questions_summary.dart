@@ -9,7 +9,7 @@ class QuestionsSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 400,
+      height: 500,
       child: SingleChildScrollView(
         child: Column(
           children: summaryData.map((item) {
@@ -41,20 +41,20 @@ class QuestionsSummary extends StatelessWidget {
                           item['question'] as String,
                           style: GoogleFonts.lato(
                             color: Colors.white,
-                            fontSize: 18,
+                            fontSize: 22,
                           ),
                         ),
                         const SizedBox(height: 10),
                         Text(item['selectedAnswer'] as String,
                             style: const TextStyle(
                               color: Color.fromARGB(255, 234, 88, 88),
-                              fontSize: 14,
+                              fontSize: 16,
                             )),
                         const SizedBox(height: 2),
                         Text(item['correctAnswer'] as String,
                             style: const TextStyle(
                               color: Color.fromARGB(255, 36, 170, 187),
-                              fontSize: 14,
+                              fontSize: 16,
                             )),
                         const SizedBox(
                           height: 10,
